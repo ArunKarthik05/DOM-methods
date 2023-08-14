@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(214, 230, 227, 0.285);
+}
+header{
+    background-color: skyblue;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+}
+main
+{
+    background-color: white;
+    width: 600px;
+    margin-top:50px;
+    margin-left:30%;
+    height: 600px;
+}
+.input-container{
+    width: 350px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.input-food{
+    width: 250px;
+    height: 40px;
+    border-width: 0.5px ;
+    border-radius: 2px;
+    color: grey;
+    outline: none;
+}
+.input-button{
+    height: 46px;
+    width: 80px;
+    color:white;
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+}
+.food-container{
+    margin-left: 20px;
+}
+.food-item{
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 20px;
+    color:grey;
+}

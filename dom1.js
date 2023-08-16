@@ -5,5 +5,14 @@ let foodContainer=document.getElementById('food-container');
 
 inputBtn.addEventListener("click",()=>
 {
-    foodContainer.innerHTML+=`<li class="food-item">${inputFood.value.toUpperCase()}</li>`;
+    let divName=document.createElement("div");
+    let divBtn=document.createElement("div");
+    let newEl= document.createElement("li");
+
+    li.className="food-item";
+    li.textContent=inputFood.value;
+
+    foodContainer.append(newEl);
+    inputFood.value="";
+   
 });

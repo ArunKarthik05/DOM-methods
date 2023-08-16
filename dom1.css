@@ -18,7 +18,7 @@ main
     width: 600px;
     margin-top:50px;
     margin-left:30%;
-    height: 600px;
+    height: auto;
 }
 .input-container{
     width: 350px;
@@ -29,10 +29,14 @@ main
 .input-food{
     width: 250px;
     height: 40px;
+    padding: 5px;
     border-width: 0.5px ;
     border-radius: 2px;
-    color: grey;
+    color: black;
+    background-color: rgb(224, 223, 223);
     outline: none;
+    border: none;
+    border-radius: 5px;
 }
 .input-button{
     height: 46px;
@@ -46,8 +50,28 @@ main
     margin-left: 20px;
 }
 .food-item{
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     border: 1px solid gray;
     margin: 20px;
     color:grey;
+    transition: background-color,color 0.4s ease-in ease-out;
+}
+.food-item:hover{
+    background-color:  blue;
+    color:white;
+}
+.alert{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    border-left: 5px solid darkgreen;
+}
+
+.close:hover{
+    color: black;
 }

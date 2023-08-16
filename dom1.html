@@ -1,52 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Food Planner</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JS DOM in Tamil</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="dom1.css">
 </head>
+
 <body>
-    <header>FOOD PLANNER</header>
+    <header>
+        🍊 FoodCook Planner
+    </header>
 
     <main id="main">
-        <!-- <div class="alert">✅Succesful! Food is updated</div> -->
-    <div class="input-container">
-    <input type="text" placeholder="Enter Food items.." class="input-food"
-    id="input-food">
-    <button class="input-button" id="input-btn">Save</button>
-</div>
-<div>
-<ul class="food-container" id="food-container">
-    <li class="food-item">
-        <div>BRIYANI</div>
-        <div onclick="close(event)">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-    </li>
+        <!-- <div class="alert">
+            <div class="alert-message">
+                <strong> ✅ Successful!</strong> Food has been updated.
+            </div>
+            <button type="button">x</button>
+        </div> -->
 
-    <li class="food-item">
-        <div>RISSOTTO</div>
-        <div onclick="close()">
-            <i class="fa-solid fa-xmark"></i>
+        <div class="input-container">
+            <input type="text" name="input-food-name" placeholder="I like to eat..." class="input-food" id="input-food">
+            <button class="input-button" id="input-btn">Save</button>
         </div>
-    </li>
+        <ul id="food-container" class="food-container">
+            <li class="food-item">
+                <div>Sambar</div>
+                <div onclick="removeFoodItem(event)"><i class="fa fa-xmark"></i></div>
+            </li>
+            <li class="food-item">
+                <div>Rasam</div>
+                <div onclick="removeFoodItem(event)"><i class="fa fa-xmark"></i></div>
+            </li>
+            <li class="food-item">
+                <div>Curd</div>
+                <div onclick="removeFoodItem(event)"><i class="fa fa-xmark"></i></div>
+            </li>
+        </ul>
+    </main>
 
-    <li class="food-item">
-        <div>CREM-BU-LE</div>
-        <div onclick="close()">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-    </li>
-</ul>
-<!-- <button class="input-button" id="resync">RESYNC</button>
-<div id="dup"></div>
-</div> -->
-</main>
+    <!-- <script src="dom1.js"></script> -->
 
-<script src="dom1.js"></script>
-<!-- <script src="learning.js"></script> -->
-<!-- <script src="replace.js"></script> -->
-<!-- <script src="clone.js"></script> -->
-<script src="remove.js"></script>
+    <!-- For Learning purpose -->
+    <script src="loop.js"></script>
+    <script src="remove.js"></script>
 </body>
+
 </html>

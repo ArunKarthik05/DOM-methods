@@ -1,77 +1,123 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: rgba(214, 230, 227, 0.285);
-}
-header{
-    background-color: skyblue;
-    height: 100px;
-    text-align: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    font-size: larger;
-}
-main
-{
-    background-color: white;
-    width: 600px;
-    margin-top:50px;
-    margin-left:30%;
-    height: auto;
-}
-.input-container{
-    width: 350px;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-.input-food{
-    width: 250px;
-    height: 40px;
-    padding: 5px;
-    border-width: 0.5px ;
-    border-radius: 2px;
-    color: black;
-    background-color: rgb(224, 223, 223);
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
-.input-button{
-    height: 46px;
-    width: 80px;
-    color:white;
-    background-color: blue;
-    border: none;
-    border-radius: 2px;
-}
-.food-container{
-    margin-left: 20px;
-}
-.food-item{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid gray;
-    margin: 20px;
-    color:grey;
-    transition: background-color,color 0.4s ease-in ease-out;
-}
-.food-item:hover{
-    background-color:  blue;
-    color:white;
-}
-.alert{
-    padding: 10px;
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: left;
-    border-left: 5px solid darkgreen;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.close:hover{
-    color: black;
+html,
+body {
+    background-color: aliceblue;
+}
+
+/* header  */
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #1b63ff;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main {
+    margin: 20px auto;
+    width: 600px;
+    text-align: center;
+
+}
+
+main>div>h1 {
+    font-size: 18px;
+}
+
+main>div>p {
+    font-size: 14px
+}
+
+/* form */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(231, 231, 231);
+}
+
+.input-food {
+    padding: 5px 10px;
+    outline: none;
+    width: 100%;
+    margin-right: 15px;
+    border: 1px solid ghostwhite;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.input-button {
+    padding: 5px 10px;
+    background-color: #1b63ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    border-color: gray;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 80px;
+}
+
+.food-container {
+    margin: 20px 0;
+    background: #fff;
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(231, 231, 231);
+}
+
+.food-container .food-item {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid rgb(231, 231, 231);
+    margin: 10px 0;
+    color: gray;
+    text-transform: capitalize;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-container .food-item:hover {
+    background-color: rgb(79, 123, 255);
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* alerts */
+.alert {
+    background: #29a746;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: left;
+    color: #fff;
+    border-left: 5px solid green;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
 }

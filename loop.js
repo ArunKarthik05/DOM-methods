@@ -1,4 +1,9 @@
 const items= document.querySelector(".food-container");
+const spanEl= document.querySelector("header span");
+
+spanEl.onclick = function(){
+    alert("click");
+}
 //console.log(items);
 // const foodItems=[];
 

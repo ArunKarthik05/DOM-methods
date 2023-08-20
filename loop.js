@@ -1,9 +1,19 @@
 const items= document.querySelector(".food-container");
 const spanEl= document.querySelector("header span");
 
-spanEl.onclick = function(){
-    alert("click");
+const handle = (event) =>{
+    console.log("clicked");
 }
+const handleDoc = (event) =>{
+    alert("You have clicked "+ this); 
+};
+spanEl.addEventListener("click", handle);
+
+document.addEventListener("keypress", handleDoc);
+
+setTimeout(()=>{
+    spanEl.removeEventListener("click",handle);
+},5000);
 //console.log(items);
 // const foodItems=[];
 

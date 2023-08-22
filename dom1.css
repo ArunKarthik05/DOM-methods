@@ -121,18 +121,3 @@ main>div>p {
     cursor: pointer;
     color: #fff;
 }
-form{
-    background-color: green;
-    padding: 10px;
-}
-form , form *{
-    margin: 10px;
-    border: 1px solid blue;
-    font-weight: bold;
-}
-form div{
-    background-color: red;
-}
-form p{
-    background-color: yellow;
-}
